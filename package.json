@@ -1,15 +1,19 @@
 {
-  "name": "hello-world",
+  "name": "vue-plugins-yyy",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "license": "MIT",
+  "main": "lib/vue-plugins-yyy.umd.min.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name vue-plugins-yyy --dest lib src/plugins/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
-    "vue": "^2.6.11"
+    "vue": "^2.6.11",
+    "vue-plugins-yyy": "^0.1.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.13",
