@@ -1,14 +1,19 @@
 <template>
   <div id="app">
-    <yyy-button>234234</yyy-button>
+    <my-jsx>
+      <span>i an slot </span>
+      <template slot="nav">i an nav</template>
+    </my-jsx>
   </div>
 </template>
 
 <script>
+import myJSX from '@/components/myJSX'
 
 export default {
   name: 'App',
   components: {
+    'my-jsx': myJSX
   }
 }
 </script>
