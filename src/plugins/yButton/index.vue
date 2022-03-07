@@ -8,7 +8,7 @@
 
 <script>
 export default {
-    name: 'yyy-button',
+    name: 'yButton',
     data() {
         return {}
     }

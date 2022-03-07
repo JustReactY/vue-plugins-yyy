@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <yyy-button>234234</yyy-button>
+    <y-button>{{$store.state.age}}</y-button>
+    <y-button>{{$store.getters.lastAge}}</y-button>
   </div>
 </template>
 
@@ -9,6 +10,11 @@
 export default {
   name: 'App',
   components: {
+  },
+  mounted() {
+    /* setInterval(() => {
+      this.$store.state.age += 1
+    }, 1000) */
   }
 }
 </script>
